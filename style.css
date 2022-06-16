@@ -16,8 +16,8 @@ body {
 }
 
 img {
-  width: 250px;
-  height: 300px;
+  width: 60vw;
+  height: 60vw;
 }
 
 header {
@@ -34,7 +34,7 @@ header {
 .logo-image {
   width: 100%;
   height: 50%;
-  background-image: url("/img/Felicias\ Gold\ Fingers\ logo2.png");
+  background-image: url("img/logo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,8 +51,10 @@ nav {
   border-radius: 0 0 10px 10px;
   position: fixed;
   top: 0;
+  padding-top: 2rem;
   margin: 0;
   font-weight: bold;
+  box-shadow: 0px 2px 20px 0px white;
 }
 
 nav li {
@@ -75,6 +77,7 @@ nav li a {
 .top-section img {
   margin: 2rem 0;
   border-radius: 5px;
+  box-shadow: 2px 2px 40px 0px white;
 }
 
 .galerie {
@@ -86,7 +89,9 @@ nav li a {
 }
 
 .galerie img {
-  margin-left: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 0px black;
 }
 
 #contact {
@@ -113,4 +118,80 @@ button {
   font-weight: bold;
   font-size: large;
   margin: 2rem;
+}
+
+@media screen and (min-width: 495px) {
+  header {
+    width: 100%;
+    min-height: 30%;
+    background-color: transparent;
+    float: right;
+  }
+
+  .logo-image {
+    width: 100%;
+    max-height: 25%;
+    background-color: lightslategray;
+    background-size: contain;
+    background-position: right;
+  }
+
+  nav {
+    width: 100%;
+    min-height: 100%;
+    background-color: transparent;
+    display: flex;
+    position: static;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: unset;
+  }
+  nav li a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 995px) {
+  header {
+    width: 100%;
+    min-height: 30%;
+    background-color: transparent;
+    float: right;
+  }
+
+  img {
+    width: 30vw;
+    height: 30vw;
+    margin-right: 2rem;
+  }
+
+  nav li a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
 }
